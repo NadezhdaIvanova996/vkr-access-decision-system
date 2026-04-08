@@ -24,14 +24,15 @@
 ```bash
 docker compose up --build
 Приложение будет доступно по адресу: http://localhost:8501
+
 Вариант 2: Локально
 Bashpython -m venv venv
 source venv/bin/activate          # Mac / Linux
 # venv\Scripts\activate           # Windows
-
 pip install -r requirements.txt
 streamlit run app.py
-Структура проекта
+
+## Структура проекта
 textvkr-access-decision-system/
 ├── app.py                    # Главное Streamlit-приложение
 ├── extract_emotions_fer.py   # Распознавание эмоций
@@ -44,7 +45,8 @@ textvkr-access-decision-system/
 ├── models/                   # Обученная модель (risk_model.pkl)
 ├── data/                     # Данные для экспериментов
 └── figures/                  # Скриншоты и результаты экспериментов
-Текущий статус
+
+## Текущий статус
 ✅ Полностью рабочий прототип
 ✅ Распознавание лиц и эмоций в реальном времени
 ✅ Модель XGBoost + полная объяснимость через SHAP
