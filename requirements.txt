@@ -8,5 +8,6 @@ xgboost
 shap
 pillow
 tqdm
+matplotlib
 # Для корректной работы face_recognition на Linux/Mac
 cmake

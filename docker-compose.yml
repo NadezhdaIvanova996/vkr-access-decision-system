@@ -1,0 +1,15 @@
+services:
+  vkr-system:
+    build: .
+    container_name: vkr-access-decision-system
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
+    # devices:
+    #   - /dev/video0:/dev/video0     # можно раскомментировать позже
+    # volumes:                        # временно отключили volumes
+    #   - ./app.py:/app/app.py
+    #   - ./extract_emotions_fer.py:/app/extract_emotions_fer.py
+    #   - ./known_faces:/app/known_faces
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
